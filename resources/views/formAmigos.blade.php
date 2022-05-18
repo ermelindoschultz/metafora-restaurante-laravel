@@ -18,11 +18,7 @@
             <div class="row">
                 <form action="/api/pedir" method="POST">
                     <div class="mb-3">
-                        <label>Tipo de mesa: </label>
-                        <select name="tipo_mesa" class="form-control">
-                            <option value="casal">Casal</option>
-                            <option value="amigos">Amigos</option>
-                        </select>
+                        <h1>Servir amigos</h1>
                     </div>
 
                     <div class="mb-3">
@@ -61,6 +57,7 @@
                         </select>
                     </div>
                     <div class="mb-3">
+                        <input type="hidden" name="tipo_mesa" value="amigos" />
                         <button type="submit">Pedir</button>
                     </div>
                 </form>
